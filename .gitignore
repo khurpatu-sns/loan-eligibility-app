@@ -1,0 +1,14 @@
+# Ignore virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Models / datasets (optional if you want small repo)
+*.pkl
+*.csv
+
+# IDE / OS files
+*.DS_Store
+.vscode/
