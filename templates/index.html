@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Eligibility Checker</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body class="bg-light">
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg p-4 form-card">
+        
+        <h2 class="text-center mb-4">Loan Eligibility Checker</h2>
+
+        <form action="/predict" method="POST">
+
+            <label>Income</label>
+            <input type="number" name="income" class="form-control mb-3" required>
+
+            <label>Age</label>
+            <input type="number" name="age" class="form-control mb-3" required>
+
+            <label>Loan Amount</label>
+            <input type="number" name="loan_amount" class="form-control mb-3" required>
+
+            <label>Credit Score</label>
+            <input type="number" name="credit_score" class="form-control mb-3" required>
+
+            <button class="btn btn-primary w-100">Check Eligibility</button>
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Result</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body class="bg-light">
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+
+    <div class="card shadow-lg p-5 result-card text-center">
+        {% if pred == 1 %}
+            <h2 class="text-success">✔ Eligible for Loan</h2>
+            <p class="lead">Congratulations! You meet the requirements.</p>
+        {% else %}
+            <h2 class="text-danger">❌ Not Eligible for Loan</h2>
+            <p class="lead">Your financial history does not meet the criteria.</p>
+        {% endif %}
+
+        <a href="/" class="btn btn-secondary mt-3">Check Again</a>
+    </div>
+
+</div>
+
+</body>
+</html>
